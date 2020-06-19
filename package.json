@@ -19,7 +19,7 @@
     "typescript": "^3.9.5"
   },
   "scripts": {
-    "prebuild": "npm run build:css",
+    "prebuild": "NODE_ENV=production npm run build:css",
     "build": "CI=false && react-scripts build",
     "build:css": "postcss src/index.css -o src/index.generated.css",
     "start": "run-p watch:css start:react",
