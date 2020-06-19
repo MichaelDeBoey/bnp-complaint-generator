@@ -5,7 +5,7 @@ import { FormInput } from './FormInput';
 const noop = () => undefined;
 
 type Props = {
-  onSubmit?: (details: {
+  onSubmit: (details: {
     clientId: string;
     firstName: string;
     lastName: string;
