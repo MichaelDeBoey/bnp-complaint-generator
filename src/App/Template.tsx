@@ -2,7 +2,16 @@ import React, { FunctionComponent } from 'react';
 
 import { Paragraph } from './Paragraph';
 
-export const Template: FunctionComponent = () => (
+type Props = {
+  clientId: string;
+  firstName: string;
+  lastName: string;
+};
+export const Template: FunctionComponent<Props> = ({
+  clientId,
+  firstName,
+  lastName,
+}) => (
   <div className="border-t mt-8 pt-8">
     <Paragraph>
       Hierbij wil ik een klacht neerleggen tegen BNP Paribas Fortis en deze
@@ -65,9 +74,9 @@ export const Template: FunctionComponent = () => (
     <Paragraph>Met vriendelijke groeten,</Paragraph>
 
     <Paragraph>
-      Michaël De Boey
+      {`${firstName} ${lastName}`}
       <br />
-      12345 67890
+      {clientId}
     </Paragraph>
   </div>
 );

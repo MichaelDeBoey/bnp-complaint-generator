@@ -1,12 +1,16 @@
-import React, { FunctionComponent, useState } from 'react';
+import React, { ComponentProps, FunctionComponent, useState } from 'react';
 
 import { Form } from './Form';
 import { Intro } from './Intro';
 import { Pattern } from './Pattern';
 import { Template } from './Template';
 
+type TemplateDetails = Omit<ComponentProps<typeof Template>, 'children'>;
 export const App: FunctionComponent = () => {
-  const [templateDetails, setTemplateDetails] = useState({});
+  const [
+    templateDetails,
+    setTemplateDetails,
+  ] = useState<TemplateDetails | null>(null);
 
   return (
     <div className="bg-white py-16 px-4 overflow-hidden sm:px-6 lg:px-8 lg:py-24">
@@ -17,8 +21,8 @@ export const App: FunctionComponent = () => {
 
         <Intro />
 
-        {Object.keys(templateDetails).length > 0 ? (
-          <Template />
+        {templateDetails ? (
+          <Template {...templateDetails} />
         ) : (
           <Form onSubmit={setTemplateDetails} />
         )}
