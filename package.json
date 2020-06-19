@@ -1,7 +1,18 @@
 {
   "name": "bnp-complaint-form",
+  "description": "BNP Paribas Fortis complaint form",
   "version": "0.1.0",
   "private": true,
+  "author": "Michaël De Boey <info@michaeldeboey.be> (https://michaeldeboey.be)",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/MichaelDeBoey/bnp-complaint-form"
+  },
+  "bugs": {
+    "url": "https://github.com/MichaelDeBoey/bnp-complaint-form/issues"
+  },
+  "homepage": "https://bnp-complaint-form.netlify.app",
   "dependencies": {
     "@tailwindcss/ui": "^0.3.0",
     "@types/node": "^14.0.13",
