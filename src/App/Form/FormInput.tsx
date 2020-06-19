@@ -7,11 +7,15 @@ import React, {
 type Props = {
   id: Required<InputHTMLAttributes<HTMLInputElement>>['id'];
   label: string;
+  onValueChange: (newValue: string) => void;
+  value: string;
 } & Pick<HTMLAttributes<HTMLDivElement>, 'className'>;
 export const FormInput: FunctionComponent<Props> = ({
   className,
   id,
   label,
+  onValueChange,
+  value,
 }) => (
   <div className={className}>
     <label
@@ -25,6 +29,8 @@ export const FormInput: FunctionComponent<Props> = ({
       <input
         className="form-input py-3 px-4 block w-full transition ease-in-out duration-150"
         id={id}
+        onChange={({ target: { value } }) => onValueChange(value)}
+        value={value}
       />
     </div>
   </div>
