@@ -20,7 +20,7 @@
   },
   "scripts": {
     "prebuild": "npm run build:css",
-    "build": "react-scripts build",
+    "build": "CI=false && react-scripts build",
     "build:css": "postcss src/index.css -o src/index.generated.css",
     "start": "run-p watch:css start:react",
     "start:react": "react-scripts start",
