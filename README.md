@@ -1,3 +1,14 @@
+# BNP Paribas Fortis complaint for not being PSD2 compliant
+
+We all love to have some cake 🍰. Unfortunately [BNP Paribas Fortis doesn't][bnp-response]. 😢
+
+This app will ask you for a details and will give you a template email you can send to file a complaint against BNP Paribas Fortis for not being [PSD2][psd2-law] compliant.
+
+[bnp-response]: https://twitter.com/CakeDotApp/status/1273651173636149255
+[psd2-law]: https://ec.europa.eu/info/law/payment-services-psd-2-directive-eu-2015-2366_en
+
+---
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
