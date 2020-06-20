@@ -46,7 +46,7 @@ export const Intro: FunctionComponent = () => (
 
     <Paragraph>
       Fill in your details and send the generated template to{' '}
-      <Link href="mailto:complaints.management@bnpparibasfortis.com">
+      <Link href="mailto:complaints.management@bnpparibasfortis.com?subject=Klanten klacht [CLIENT ID] PSD 2 API (gelinkt aan KQ10440226)">
         complaints.management@bnpparibasfortis.com
       </Link>
       .
