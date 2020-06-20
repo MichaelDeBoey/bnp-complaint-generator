@@ -1,6 +1,8 @@
 import React, { FunctionComponent, useState } from 'react';
 
 import { FormInput } from './FormInput';
+import { Link } from '../Link';
+import { Paragraph } from '../Paragraph';
 
 const noop = () => undefined;
 
@@ -39,6 +41,7 @@ export const Form: FunctionComponent<Props> = ({ onSubmit }) => {
 
       <FormInput
         className="sm:col-span-2"
+        description="I only need this to fill in the template, pinky promise! If you don't trust me, fill in whatever you want and change it later."
         id="client_id"
         label="Client ID (available on your bank card)"
         onValueChange={setClientId}

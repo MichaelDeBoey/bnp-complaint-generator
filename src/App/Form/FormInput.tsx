@@ -5,6 +5,7 @@ import React, {
 } from 'react';
 
 type Props = {
+  description?: string;
   id: Required<InputHTMLAttributes<HTMLInputElement>>['id'];
   label: string;
   onValueChange: (newValue: string) => void;
@@ -12,6 +13,7 @@ type Props = {
 } & Pick<HTMLAttributes<HTMLDivElement>, 'className'>;
 export const FormInput: FunctionComponent<Props> = ({
   className,
+  description,
   id,
   label,
   onValueChange,
@@ -24,6 +26,10 @@ export const FormInput: FunctionComponent<Props> = ({
     >
       {label}
     </label>
+
+    {description ? (
+      <p className={`leading-6 text-gray-500 text-sm`}>{description}</p>
+    ) : null}
 
     <div className="mt-1 relative rounded-md shadow-sm">
       <input
