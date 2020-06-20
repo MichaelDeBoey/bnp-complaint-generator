@@ -34,11 +34,11 @@ export const Intro: FunctionComponent = () => (
     </Paragraph>
 
     <Paragraph>
-      Let's make BNP Paribas Fortis{' '}
+      Let's urge BNP Paribas Fortis to develop a working{' '}
       <Link href="https://ec.europa.eu/info/law/payment-services-psd-2-directive-eu-2015-2366_en">
         PSD 2
       </Link>{' '}
-      compliant, so we all can have some Cake!{' '}
+      interface (API), so we all can have some Cake!{' '}
       <span role="img" aria-label="strong arm">
         💪
       </span>
