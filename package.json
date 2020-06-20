@@ -31,7 +31,7 @@
   },
   "scripts": {
     "prebuild": "NODE_ENV=production npm run build:css",
-    "build": "CI=false && react-scripts build",
+    "build": "react-scripts build",
     "build:css": "postcss src/index.css -o src/index.generated.css",
     "start": "run-p watch:css start:react",
     "start:react": "react-scripts start",

@@ -56,7 +56,10 @@ export const Form: FunctionComponent<Props> = ({ onSubmit }) => {
             } w-full inline-flex items-center justify-center px-6 py-3 border border-transparent text-base leading-6 font-medium rounded-md text-white hover:bg-indigo-500 focus:outline-none focus:border-indigo-700 focus:shadow-outline-indigo active:bg-indigo-700 transition ease-in-out duration-150`}
             onClick={enableSubmitButton ? onGenerateTemplate : noop}
           >
-            ⚙️ Generate template
+            <span role="img" aria-label="gear">
+              ⚙️
+            </span>{' '}
+            Generate template
           </button>
         </span>
       </div>

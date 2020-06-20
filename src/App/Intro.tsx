@@ -14,14 +14,23 @@ export const Intro: FunctionComponent = () => (
     <Title>BNP Paribas Fortis complaint form</Title>
 
     <Paragraph>
-      We all love to have some <Link href="https://cake.app">Cake 🍰</Link>
+      We all love to have some{' '}
+      <Link href="https://cake.app">
+        Cake{' '}
+        <span role="img" aria-label="Cake">
+          🍰
+        </span>
+      </Link>
       .
       <br />
       Unfortunately{' '}
       <Link href="https://twitter.com/CakeDotApp/status/1273651173636149255">
         BNP Paribas Fortis doesn't
       </Link>
-      . 😢
+      .{' '}
+      <span role="img" aria-label="sad face">
+        😢
+      </span>
     </Paragraph>
 
     <Paragraph>
@@ -29,7 +38,10 @@ export const Intro: FunctionComponent = () => (
       <Link href="https://ec.europa.eu/info/law/payment-services-psd-2-directive-eu-2015-2366_en">
         PSD 2
       </Link>{' '}
-      compliant, so we all can have some Cake! 💪
+      compliant, so we all can have some Cake!{' '}
+      <span role="img" aria-label="strong arm">
+        💪
+      </span>
     </Paragraph>
 
     <Paragraph>
