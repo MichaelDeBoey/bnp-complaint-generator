@@ -39,5 +39,12 @@ export const Intro: FunctionComponent = () => (
       </Link>
       .
     </Paragraph>
+
+    <Paragraph fontSize="small">
+      This website is <span className="font-medium text-gray-700">not</span>{' '}
+      affiliated in any way with neither{' '}
+      <Link href="https://cake.app">Cake</Link> nor{' '}
+      <Link href="http://bnpparibasfortis.be">BNP Paribas Fortis</Link>.
+    </Paragraph>
   </div>
 );

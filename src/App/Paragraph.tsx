@@ -1,11 +1,18 @@
 import React, { FunctionComponent, HTMLAttributes } from 'react';
 
-type Props = Pick<HTMLAttributes<HTMLParagraphElement>, 'className'>;
+type Props = {
+  fontSize?: 'small' | 'large';
+} & Pick<HTMLAttributes<HTMLParagraphElement>, 'className'>;
 export const Paragraph: FunctionComponent<Props> = ({
   children,
   className,
+  fontSize = 'large',
 }) => (
-  <p className={`mt-4 text-lg leading-6 text-gray-500 ${className ?? ''}`}>
+  <p
+    className={`mt-4 leading-6 text-gray-500 ${
+      fontSize === 'large' ? 'text-lg' : 'text-sm'
+    } ${className ?? ''}`}
+  >
     {children}
   </p>
 );
