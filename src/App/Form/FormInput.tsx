@@ -4,19 +4,21 @@ import React, {
   InputHTMLAttributes,
 } from 'react';
 
+type InputType = InputHTMLAttributes<HTMLInputElement>
 type Props = {
   description?: string;
-  id: Required<InputHTMLAttributes<HTMLInputElement>>['id'];
+  id: Required<InputType>['id'];
   label: string;
   onValueChange: (newValue: string) => void;
   value: string;
-} & Pick<HTMLAttributes<HTMLDivElement>, 'className'>;
+} & Pick<HTMLAttributes<HTMLDivElement>, 'className'> & Pick<InputType, 'placeholder'>;
 export const FormInput: FunctionComponent<Props> = ({
   className,
   description,
   id,
   label,
   onValueChange,
+  placeholder,
   value,
 }) => (
   <div className={className}>
@@ -36,6 +38,7 @@ export const FormInput: FunctionComponent<Props> = ({
         className="form-input py-3 px-4 block w-full transition ease-in-out duration-150"
         id={id}
         onChange={({ target: { value } }) => onValueChange(value)}
+        placeholder={placeholder}
         value={value}
       />
     </div>

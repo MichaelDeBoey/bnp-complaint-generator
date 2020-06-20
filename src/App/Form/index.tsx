@@ -1,8 +1,6 @@
 import React, { FunctionComponent, useState } from 'react';
 
 import { FormInput } from './FormInput';
-import { Link } from '../Link';
-import { Paragraph } from '../Paragraph';
 
 const noop = () => undefined;
 
@@ -29,6 +27,7 @@ export const Form: FunctionComponent<Props> = ({ onSubmit }) => {
         id="first_name"
         label="First name"
         onValueChange={setFirstName}
+        placeholder="John"
         value={firstName}
       />
 
@@ -36,6 +35,7 @@ export const Form: FunctionComponent<Props> = ({ onSubmit }) => {
         id="last_name"
         label="Last name"
         onValueChange={setLastName}
+        placeholder="Appleseed"
         value={lastName}
       />
 
@@ -45,6 +45,7 @@ export const Form: FunctionComponent<Props> = ({ onSubmit }) => {
         id="client_id"
         label="Client ID (available on your bank card)"
         onValueChange={setClientId}
+        placeholder="12345 67890"
         value={clientId}
       />
 
