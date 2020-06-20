@@ -34,8 +34,8 @@ export const Intro: FunctionComponent = () => (
 
     <Paragraph>
       Fill in your details and send the generated template to{' '}
-      <Link href="mailto:complaints.management@bnpparisbasfortis.com">
-        complaints.management@bnpparisbasfortis.com
+      <Link href="mailto:complaints.management@bnpparibasfortis.com">
+        complaints.management@bnpparibasfortis.com
       </Link>
       .
     </Paragraph>

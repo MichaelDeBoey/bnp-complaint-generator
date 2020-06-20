@@ -7,10 +7,10 @@ Let's make BNP Paribas Fortis [PSD 2][psd2-law] compliant, so we all can have
 some Cake! 💪
 
 Fill in your details and send the generated template to
-[complaints.management@bnpparisbasfortis.com][complaint-email].
+[complaints.management@bnpparibasfortis.com][complaint-email].
 
 [bnp-response]: https://twitter.com/CakeDotApp/status/1273651173636149255
-[complaint-email]: mailto:complaints.management@bnpparisbasfortis.com
+[complaint-email]: mailto:complaints.management@bnpparibasfortis.com
 [psd2-law]:
   https://ec.europa.eu/info/law/payment-services-psd-2-directive-eu-2015-2366_en
 
