@@ -3,6 +3,7 @@ import React, { ComponentProps, FunctionComponent, useState } from 'react';
 import { Form } from './Form';
 import { Intro } from './Intro';
 import { Pattern } from './Pattern';
+import { SocialLinks } from './SocialLinks';
 import { Template } from './Template';
 
 type TemplateDetails = Omit<ComponentProps<typeof Template>, 'children'>;
@@ -26,6 +27,8 @@ export const App: FunctionComponent = () => {
         ) : (
           <Form onSubmit={setTemplateDetails} />
         )}
+
+        <SocialLinks />
       </div>
     </div>
   );
