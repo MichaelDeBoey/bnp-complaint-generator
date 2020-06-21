@@ -15,10 +15,15 @@
   "homepage": "https://bnp-complaint-form.netlify.app",
   "dependencies": {
     "@tailwindcss/ui": "^0.3.0",
+    "@types/airtable": "^0.8.0",
     "@types/node": "^14.0.13",
     "@types/react": "^16.9.38",
     "@types/react-dom": "^16.9.8",
+    "airtable": "^0.8.1",
     "autoprefixer": "^9.8.0",
+    "dotenv-cli": "^3.1.0",
+    "http-proxy-middleware": "^1.0.4",
+    "netlify-lambda": "^1.6.3",
     "npm-run-all": "^4.1.5",
     "postcss-cli": "^7.1.1",
     "prettier": "^2.0.5",
@@ -33,10 +38,12 @@
     "prebuild": "NODE_ENV=production npm run generate:css",
     "build": "run-p build:**",
     "build:app": "react-scripts build",
+    "build:functions": "netlify-lambda build netlify/functions",
     "generate:css": "postcss src/index.css -o src/index.generated.css",
     "start": "run-p start:**",
     "start:app": "react-scripts start",
-    "start:css": "npm run generate:css -- -w"
+    "start:css": "npm run generate:css -- -w",
+    "start:functions": "dotenv netlify-lambda serve netlify/functions"
   },
   "eslintConfig": {
     "extends": "react-app"

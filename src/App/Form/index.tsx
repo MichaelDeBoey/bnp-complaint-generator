@@ -19,7 +19,11 @@ export const Form: FunctionComponent<Props> = ({ onSubmit }) => {
   const enableSubmitButton =
     Boolean(firstName) && Boolean(lastName) && Boolean(clientId);
 
-  const onGenerateTemplate = () => onSubmit({ clientId, firstName, lastName });
+  const onGenerateTemplate = () => {
+    fetch('/.netlify/functions/trackTemplateGeneration');
+
+    onSubmit({ clientId, firstName, lastName });
+  };
 
   return (
     <div className="mt-12 grid grid-cols-1 row-gap-6 sm:grid-cols-2 sm:col-gap-8">
