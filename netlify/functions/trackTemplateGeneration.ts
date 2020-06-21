@@ -5,8 +5,12 @@ const base = new Airtable({
   apiKey: process.env.AIRTABLE_API_KEY,
 }).base('appMqQ4vZMxQrUeXT');
 
-export const handler = async () =>
-  base('GenerateTemplateClicked')
+export const handler = async () => {
+  if (process.env.NODE_ENV !== 'production') {
+    return;
+  }
+
+  return base('GenerateTemplateClicked')
     .create({})
     .then((createdRecord) => ({
       statusCode: 200,
@@ -20,3 +24,4 @@ export const handler = async () =>
         body: JSON.stringify({ msg: error.message }),
       };
     });
+};
