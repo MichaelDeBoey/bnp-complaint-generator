@@ -6,7 +6,7 @@ import { ReactComponent as TwitterLogo } from './Twitter.svg';
 
 export const SocialLinks: FunctionComponent = () => (
   <div className="border-t mt-8 pt-8 flex justify-center text-gray-500">
-    <IconLink href="https://github.com/MichaelDeBoey/bnp-complaint-form">
+    <IconLink href="https://github.com/MichaelDeBoey/bnp-complaint-generator">
       <GitHubLogo className="fill-current w-5 h-5" />
     </IconLink>
 

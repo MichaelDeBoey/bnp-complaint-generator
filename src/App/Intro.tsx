@@ -11,7 +11,7 @@ const Title: FunctionComponent = ({ children }) => (
 
 export const Intro: FunctionComponent = () => (
   <div className="text-center">
-    <Title>BNP Paribas Fortis complaint form</Title>
+    <Title>BNP Paribas Fortis complaint generator</Title>
 
     <Paragraph>
       We all love to have some{' '}

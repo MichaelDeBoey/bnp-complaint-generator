@@ -1,10 +1,10 @@
-# BNP Paribas Fortis complaint for not being PSD2 compliant
+# BNP Paribas Fortis complaint generator
 
 We all love to have some cake 🍰. Unfortunately [BNP Paribas Fortis
 doesn't][bnp-response]. 😢
 
-Let's urge BNP Paribas Fortis to develop a working [PSD 2][psd2-directive] interface
-(API), so we all can have some Cake! 💪
+Let's urge BNP Paribas Fortis to develop a working [PSD 2][psd2-directive]
+interface (API), so we all can have some Cake! 💪
 
 Fill in your details and send the generated template to
 [complaints.management@bnpparibasfortis.com][complaint-email].
