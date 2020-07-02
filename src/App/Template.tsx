@@ -35,7 +35,7 @@ export const Template: FunctionComponent<Props> = ({
       waardoor ik geen gebruik kan maken van de diensten van Cake. Deze diensten
       zorgen ervoor dat hun gebruikers geld kunnen verdienen via cashbacks of
       door het delen van hun data met Cake. Ik las dat de gemiddelde gebruiker
-      op een paar maanden tijd reeds 10 euro kon verdienen met Cake.
+      op een paar maanden tijd reeds meer dan 10 euro kon verdienen met Cake.
     </Paragraph>
 
     <Paragraph>
