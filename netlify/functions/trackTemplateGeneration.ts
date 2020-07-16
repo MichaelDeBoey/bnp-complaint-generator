@@ -7,7 +7,7 @@ const base = new Airtable({
 
 export const handler = async () => {
   if (process.env.NODE_ENV !== 'production') {
-    return;
+    return { statusCode: 204 };
   }
 
   return base('GenerateTemplateClicked')
