@@ -43,7 +43,7 @@
     "start": "run-p start:**",
     "start:app": "react-scripts start",
     "start:css": "npm run generate:css -- -w",
-    "start:functions": "dotenv netlify-lambda serve netlify/functions"
+    "start:functions": "NODE_ENV=development dotenv netlify-lambda serve netlify/functions"
   },
   "eslintConfig": {
     "extends": "react-app"
