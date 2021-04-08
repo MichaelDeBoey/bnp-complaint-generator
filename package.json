@@ -20,7 +20,7 @@
     "@types/react": "^16.9.43",
     "@types/react-dom": "^16.9.8",
     "airtable": "^0.8.1",
-    "autoprefixer": "^9.8.5",
+    "autoprefixer": "^9.8.6",
     "dotenv-cli": "^3.2.0",
     "http-proxy-middleware": "^1.0.5",
     "netlify-lambda": "^2.0.3",
