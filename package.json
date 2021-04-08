@@ -28,7 +28,7 @@
     "postcss-cli": "^7.1.1",
     "prettier": "^2.0.5",
     "pretty-quick": "^2.0.1",
-    "react": "^16.13.1",
+    "react": "^16.14.0",
     "react-dom": "^16.13.1",
     "react-scripts": "3.4.1",
     "tailwindcss": "^1.5.1",
