@@ -4,14 +4,15 @@ import React, {
   InputHTMLAttributes,
 } from 'react';
 
-type InputType = InputHTMLAttributes<HTMLInputElement>
+type InputType = InputHTMLAttributes<HTMLInputElement>;
 type Props = {
   description?: string;
   id: Required<InputType>['id'];
   label: string;
   onValueChange: (newValue: string) => void;
   value: string;
-} & Pick<HTMLAttributes<HTMLDivElement>, 'className'> & Pick<InputType, 'placeholder'>;
+} & Pick<HTMLAttributes<HTMLDivElement>, 'className'> &
+  Pick<InputType, 'placeholder'>;
 export const FormInput: FunctionComponent<Props> = ({
   className,
   description,
