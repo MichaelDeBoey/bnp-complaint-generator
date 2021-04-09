@@ -1,4 +1,4 @@
-import React, { FunctionComponent, HTMLAttributes } from 'react';
+import { FunctionComponent, HTMLAttributes } from 'react';
 
 type Props = {
   fontSize?: 'small' | 'large';

@@ -1,0 +1,6 @@
+# production
+/build
+/functions
+
+src/react-app-env.d.ts
+src/index.generated.css

@@ -1,4 +1,4 @@
-import React, { AnchorHTMLAttributes, FunctionComponent } from 'react';
+import { AnchorHTMLAttributes, FunctionComponent } from 'react';
 
 type AnchorType = AnchorHTMLAttributes<HTMLAnchorElement>;
 type Props = Required<Pick<AnchorType, 'href'>> & Pick<AnchorType, 'onClick'>;

@@ -1,4 +1,4 @@
-import React, { FunctionComponent } from 'react';
+import { FunctionComponent } from 'react';
 
 import { ReactComponent as GitHubLogo } from './GitHub.svg';
 import { IconLink } from './IconLink';
