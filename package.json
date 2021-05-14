@@ -18,7 +18,7 @@
     "@types/airtable": "^0.8.1",
     "@types/node": "^14.14.44",
     "@types/react": "^17.0.5",
-    "@types/react-dom": "^17.0.3",
+    "@types/react-dom": "^17.0.5",
     "airtable": "^0.8.1",
     "autoprefixer": "^9.8.6",
     "dotenv-cli": "^4.0.0",
