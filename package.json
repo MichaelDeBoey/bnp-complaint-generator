@@ -16,7 +16,7 @@
   "dependencies": {
     "@tailwindcss/ui": "^0.7.2",
     "@types/airtable": "^0.8.1",
-    "@types/node": "^16.7.11",
+    "@types/node": "^16.7.13",
     "@types/react": "^17.0.20",
     "@types/react-dom": "^17.0.9",
     "airtable": "^0.8.1",
