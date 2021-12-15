@@ -1,4 +1,5 @@
-import { ComponentProps, FunctionComponent, useEffect, useState } from 'react';
+import type { ComponentProps, FunctionComponent } from 'react';
+import { useEffect, useState } from 'react';
 
 import { Form } from './Form';
 import { Intro } from './Intro';

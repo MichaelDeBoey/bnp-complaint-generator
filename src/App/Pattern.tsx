@@ -1,4 +1,4 @@
-import { FunctionComponent, SVGProps } from 'react';
+import type { FunctionComponent, SVGProps } from 'react';
 
 type Props = Pick<SVGProps<SVGSVGElement>, 'className'>;
 export const Pattern: FunctionComponent<Props> = ({ className }) => (

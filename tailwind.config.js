@@ -1,8 +1,7 @@
 module.exports = {
-  purge: ['./src/**/*.tsx'],
+  content: ['./src/**/*.tsx'],
   theme: {
     extend: {},
   },
-  variants: {},
-  plugins: [require('@tailwindcss/ui')],
+  plugins: [require('@tailwindcss/forms')],
 };
