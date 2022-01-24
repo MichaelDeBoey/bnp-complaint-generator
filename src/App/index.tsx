@@ -17,11 +17,11 @@ export const App: FunctionComponent = () => {
   }, []);
 
   return (
-    <div className="bg-white py-16 px-4 overflow-hidden sm:px-6 lg:px-8 lg:py-24">
-      <div className="relative max-w-xl mx-auto">
-        <Pattern className="absolute left-full transform translate-x-1/2" />
+    <div className="overflow-hidden bg-white py-16 px-4 sm:px-6 lg:px-8 lg:py-24">
+      <div className="relative mx-auto max-w-xl">
+        <Pattern className="absolute left-full translate-x-1/2 transform" />
 
-        <Pattern className="absolute right-full bottom-0 transform -translate-x-1/2" />
+        <Pattern className="absolute right-full bottom-0 -translate-x-1/2 transform" />
 
         <Intro />
 

@@ -28,12 +28,12 @@ export const FormInput: FunctionComponent<Props> = ({
     </label>
 
     {description ? (
-      <p className={`leading-6 text-gray-500 text-sm`}>{description}</p>
+      <p className={`text-sm leading-6 text-gray-500`}>{description}</p>
     ) : null}
 
     <div className="mt-1">
       <input
-        className="py-3 px-4 block w-full shadow-sm focus:ring-indigo-500 focus:border-indigo-500 border-gray-300 rounded-md"
+        className="block w-full rounded-md border-gray-300 py-3 px-4 shadow-sm focus:border-indigo-500 focus:ring-indigo-500"
         id={id}
         onChange={({ target: { value } }) => onValueChange(value)}
         placeholder={placeholder}

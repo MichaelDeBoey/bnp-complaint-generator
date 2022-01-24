@@ -12,7 +12,7 @@ export const Template: FunctionComponent<Props> = ({
   firstName,
   lastName,
 }) => (
-  <div className="border-t mt-8 pt-8">
+  <div className="mt-8 border-t pt-8">
     <Paragraph>
       Hierbij wil ik een klacht neerleggen tegen BNP Paribas Fortis en deze
       koppelen aan de klacht met nummer KQ10440226.

@@ -59,9 +59,9 @@ export const Form: FunctionComponent<Props> = ({ onSubmit }) => {
           type="submit"
           className={`${
             enableSubmitButton
-              ? 'bg-indigo-600 cursor-pointer'
-              : 'bg-indigo-500 cursor-not-allowed'
-          } gap-x-2 w-full inline-flex items-center justify-center px-6 py-3 border border-transparent rounded-md shadow-sm text-base font-medium text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500`}
+              ? 'cursor-pointer bg-indigo-600'
+              : 'cursor-not-allowed bg-indigo-500'
+          } inline-flex w-full items-center justify-center gap-x-2 rounded-md border border-transparent bg-indigo-600 px-6 py-3 text-base font-medium text-white shadow-sm hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2`}
           onClick={enableSubmitButton ? onGenerateTemplate : noop}
         >
           <span role="img" aria-label="gear">
