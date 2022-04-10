@@ -1,9 +1,9 @@
-import type { FunctionComponent } from 'react';
+import type { FunctionComponent, PropsWithChildren } from 'react';
 
 import { Link } from './Link';
 import { Paragraph } from './Paragraph';
 
-const Title: FunctionComponent = ({ children }) => (
+const Title: FunctionComponent<PropsWithChildren<{}>> = ({ children }) => (
   <h2 className="text-3xl font-extrabold leading-9 tracking-tight text-gray-900 sm:text-4xl sm:leading-10">
     {children}
   </h2>

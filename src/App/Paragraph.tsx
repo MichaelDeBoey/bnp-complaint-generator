@@ -1,9 +1,13 @@
-import type { FunctionComponent, HTMLAttributes } from 'react';
+import type {
+  FunctionComponent,
+  HTMLAttributes,
+  PropsWithChildren,
+} from 'react';
 
 type Props = {
   fontSize?: 'small' | 'large';
 } & Pick<HTMLAttributes<HTMLParagraphElement>, 'className'>;
-export const Paragraph: FunctionComponent<Props> = ({
+export const Paragraph: FunctionComponent<PropsWithChildren<Props>> = ({
   children,
   className,
   fontSize = 'large',
