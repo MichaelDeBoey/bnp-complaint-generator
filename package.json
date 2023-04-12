@@ -19,7 +19,7 @@
     "@types/node": "^18.15.11",
     "@types/react": "^18.0.35",
     "@types/react-dom": "^18.0.11",
-    "airtable": "^0.8.1",
+    "airtable": "^0.11.6",
     "dotenv-cli": "^7.2.1",
     "http-proxy-middleware": "^2.0.6",
     "netlify-lambda": "^2.0.16",
