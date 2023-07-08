@@ -8,6 +8,6 @@ module.exports = function (app) {
       pathRewrite: {
         '/.netlify/functions/': '',
       },
-    })
+    }),
   );
 };
