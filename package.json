@@ -18,7 +18,7 @@
     "@types/airtable": "^0.8.1",
     "@types/node": "^20.9.3",
     "@types/react": "^18.2.38",
-    "@types/react-dom": "^18.2.16",
+    "@types/react-dom": "^18.2.17",
     "airtable": "^0.8.1",
     "dotenv-cli": "^7.3.0",
     "http-proxy-middleware": "^2.0.6",
